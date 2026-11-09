@@ -1,81 +1,154 @@
-<style>
-  /* ===== ESTILOS DEFINITIVOS: FONDO ROSA Y LETRA BLANCA ===== */
-  body {
-    background-color: #db2777 !important; /* Color de fondo rosa forzado */
-    color: #ffffff !important;            /* Color de letra blanco general */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impacto de las Adicciones Parentales y Resiliencia Infantil | TFG Trabajo Social</title>
+  <style>
+    /* ===== ESTILOS: FONDO ROSA Y LETRA BLANCA ===== */
+    body {
+      background-color: #db2777 !important; /* Fondo rosa */
+      color: #ffffff !important;            /* Letra blanca */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
 
-  /* Forzamos también las cajas para que mantengan la armonía y el texto blanco */
-  header, main, footer {
-    background-color: rgba(0, 0, 0, 0.15); /* Un fondo semitransparente sutil */
-    color: #ffffff !important;
-    padding: 40px;
-    margin-bottom: 24px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
+    header, main, footer {
+      background-color: rgba(0, 0, 0, 0.15); /* Caja semitransparente para contraste elegante */
+      color: #ffffff !important;
+      padding: 40px;
+      margin-bottom: 24px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
 
-  /* Forzamos que absolutamente todos los títulos y textos sean blancos */
-  h1, h2, p, li, a, span, .meta {
-    color: #ffffff !important;
-  }
+    h1, h2, p, li, a, span, .meta {
+      color: #ffffff !important;
+    }
 
-  h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 10px;
-  }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 10px;
+    }
 
-  h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    margin-top: 0;
-    margin-bottom: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 8px;
-  }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-top: 0;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 8px;
+    }
 
-  /* Contenedor del vídeo adaptado */
-  .video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-    margin-top: 15px;
-  }
+    .meta {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.9;
+    }
 
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 4px;
-  }
+    /* Contenedor adaptado para el vídeo de YouTube */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+      height: 0;
+      margin-top: 20px;
+    }
 
-  code {
-    background: rgba(0, 0, 0, 0.2);
-    color: #ffffff !important;
-    padding: 2px 6px;
-    font-size: 0.85rem;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-  }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 4px;
+    }
 
-  footer {
-    text-align: center;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-  }
-</style>
+    code {
+      background: rgba(0, 0, 0, 0.2);
+      color: #ffffff !important;
+      padding: 2px 6px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INICIO: CABECERA -->
+  <header>
+    <h1>Romper el ciclo: factores de protección en jóvenes con adicciones parentales</h1>
+    <p class="meta">Asignatura: Informática para el Trabajo Social | Grado en Trabajo Social (UCA)</p>
+  </header>
+  <!-- FIN: CABECERA -->
+
+  <main>
+    <!-- INICIO: RESUMEN -->
+    <section>
+      <h2>Resumen</h2>
+      <p>Las adicciones en el ámbito parental representan un factor de riesgo crítico para la desprotección infantil y la alteración de las dinámicas familiares. Este trabajo examina el impacto psicosocial en los menores y destaca la importancia de enfocar la intervención desde una perspectiva de resiliencia y activos en salud, más allá de la mera perspectiva patologizadora.</p>
+    </section>
+    <!-- FIN: RESUMEN -->
+
+    <!-- INICIO: HALLAZGO -->
+    <section>
+      <h2>Principal Hallazgo y Multimedia</h2>
+      <p>La investigación bibliográfica preliminar muestra que la presencia de figuras de apego secundario estables y el desarrollo de competencias socioemocionales actúan como los mitigadores más potentes frente a la transmisión intergeneracional de conductas adictivas.</p>
+      
+      <!-- Vídeo de YouTube integrado -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/8_lbGB7yTDY" title="Vídeo del proyecto" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!-- FIN: HALLAZGO -->
+
+    <!-- INICIO: DESCARGAS -->
+    <section>
+      <h2>Descargas y Recursos</h2>
+      <p>Puedes acceder a la memoria completa del TFG y a los materiales complementarios del repositorio en GitHub.</p>
+    </section>
+    <!-- FIN: DESCARGAS -->
+
+    <!-- INICIO: CÓMO CITAR -->
+    <section>
+      <h2>Cómo citar este trabajo</h2>
+      <p><code>[Apellidos, Iniciales del Autor]. (2027). Romper el ciclo: factores de protección en jóvenes que han crecido en familias con problemas de adicción [Trabajo de Fin de Grado, Universidad de Cádiz]. Repositorio de la asignatura Informática para el Trabajo Social.</code></p>
+    </section>
+    <!-- FIN: CÓMO CITAR -->
+
+    <!-- INICIO: DECLARACIÓN IA -->
+    <section>
+      <h2>Declaración de uso de Inteligencia Artificial</h2>
+      <p>En cumplimiento de las directrices académicas, se declara que se han utilizado herramientas de asistencia de Inteligencia Artificial exclusivamente para la estructuración metodológica, revisión de redacción académica y consulta bibliográfica, siendo la autoría y responsabilidad intelectual del contenido enteramente del estudiante.</p>
+    </section>
+    <!-- FIN: DECLARACIÓN IA -->
+  </main>
+
+  <!-- INICIO: PIE -->
+  <footer>
+    <p>&copy; 2026/2027 — Grado en Trabajo Social, Universidad de Cádiz (Campus de Jerez).</p>
+  </footer>
+  <!-- FIN: PIE -->
+
+</body>
+</html>
