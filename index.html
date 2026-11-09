@@ -1,22 +1,81 @@
 <style>
+  /* ===== ESTILOS DEFINITIVOS: FONDO ROSA Y LETRA BLANCA ===== */
   body {
-    background-color: #db2777; /* Color de fondo rosa */
-    color: #ffffff;            /* Letra en blanco */
-    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #db2777 !important; /* Color de fondo rosa forzado */
+    color: #ffffff !important;            /* Color de letra blanco general */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-  }
-  
-  header, main, footer {
-    background-color: rgba(0, 0, 0, 0.15); /* Un fondo ligeramente contrastado para las cajas */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    padding: 40px 20px;
   }
 
-  h1, h2, p, a {
-    color: #ffffff; /* Asegura que todos los textos internos también sean blancos */
+  /* Forzamos también las cajas para que mantengan la armonía y el texto blanco */
+  header, main, footer {
+    background-color: rgba(0, 0, 0, 0.15); /* Un fondo semitransparente sutil */
+    color: #ffffff !important;
+    padding: 40px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /* Forzamos que absolutamente todos los títulos y textos sean blancos */
+  h1, h2, p, li, a, span, .meta {
+    color: #ffffff !important;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 8px;
+  }
+
+  /* Contenedor del vídeo adaptado */
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 15px;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  code {
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff !important;
+    padding: 2px 6px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
   }
 </style>
